@@ -19,4 +19,4 @@ The Championships Management System simplifies the organization of championships
 6. **Update Winner**: `update winner <match_id> <winner>` - Update the winner of a match.
 7. **Get Results**: `get results <championship_id>` - Retrieve the results of matches in a specific championship.
 8. **Postpone Match**: `postpone <match_id>` - Postpone/reschedule a match by one hour.
-9. **Logout**: `logout` - Log out from the current session.
+9. **Logout**: `exit` - Log out from the current session.
