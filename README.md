@@ -20,3 +20,32 @@ The Championships Management System simplifies the organization of championships
 7. **Get Results**: `get results <championship_id>` - Retrieve the results of matches in a specific championship.
 8. **Postpone Match**: `postpone <match_id>` - Postpone/reschedule a match by one hour.
 9. **Logout**: `exit` - Log out from the current session.
+
+## Usage
+
+### Compiling the Server and Client Files
+
+#### USAGE:
+
+- **Compile Server.c**:
+
+  ```bash
+  gcc server.c -o server -lpthread -lsqlite3
+This command compiles server.c into an executable named server with support for POSIX threads (-lpthread flag) and linking with SQLite3 library (-lsqlite3 flag).
+-**Compile Client.c**:
+```bash
+gcc client.c -o client
+This command compiles client.c into an executable named client.
+
+- **Running the Server and Client**:
+Run the server by executing the compiled binary:
+```bash
+./server
+This starts the server and listens for incoming connections.
+Start the Client:
+
+Open another terminal window/tab.
+Run the client by executing its compiled binary:
+```bash
+./client
+This starts the client application, and it will connect to the server.
