@@ -25,22 +25,21 @@ The Championships Management System simplifies the organization of championships
 
 ### Compiling the Server and Client Files
 
-#### USAGE:
-
 - **Compile Server.c**:
 
   ```bash
   gcc server.c -o server -lpthread -lsqlite3
 This command compiles server.c into an executable named server with support for POSIX threads (-lpthread flag) and linking with SQLite3 library (-lsqlite3 flag).
 
--**Compile Client.c**:
+- **Compile Client.c**:
+  
   ```bash
   gcc client.c -o client
-
 This command compiles client.c into an executable named client.
 
--**Running the Server and Client**:
+- **Running the Server and Client**:
 Run the server by executing the compiled binary:
+
   ```bash
   ./server
 This starts the server and listens for incoming connections.
